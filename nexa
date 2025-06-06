@@ -1,0 +1,36 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * Nexa Framework CLI Tool
+ * 
+ * This script provides command-line interface for the Nexa Framework.
+ * It allows developers to run various commands like migrations, tests,
+ * code generation, and more.
+ */
+
+// Define base path
+define('BASE_PATH', __DIR__);
+
+// Load Composer autoloader
+require_once BASE_PATH . '/vendor/autoload.php';
+
+// Load environment variables
+if (file_exists(BASE_PATH . '/.env')) {
+    $dotenv = Dotenv\Dotenv::createImmutable(BASE_PATH);
+    $dotenv->load();
+}
+
+// Load helpers
+require_once BASE_PATH . '/src/Nexa/Core/helpers.php';
+
+use Nexa\Console\NexaCLI;
+
+try {
+    // Create CLI instance and run
+    $cli = new NexaCLI();
+    $cli->run($argv);
+} catch (Exception $e) {
+    echo "Error: " . $e->getMessage() . "\n";
+    exit(1);
+}

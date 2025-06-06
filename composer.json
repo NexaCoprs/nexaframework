@@ -1,0 +1,40 @@
+{
+    "name": "nexa/framework",
+    "description": "A simple yet complete PHP framework with Tailwind CSS support",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "firebase/php-jwt": "^6.11",
+        "cboden/ratchet": "^0.4.4",
+        "symfony/console": "^6.2",
+        "symfony/var-dumper": "^6.2",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nexa\\": "src/Nexa/",
+            "App\\": "app/"
+        },
+        "files": [
+            "src/Nexa/Core/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Nexa\\Core\\ComposerScripts::postAutoloadDump"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

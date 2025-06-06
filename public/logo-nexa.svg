@@ -1,0 +1,73 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient principal -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient pour l'effet de profondeur -->
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Filtre pour l'ombre -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="4" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Filtre pour l'effet de lueur -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Cercle de fond avec ombre -->
+  <circle cx="150" cy="150" r="140" fill="url(#shadowGradient)" filter="url(#shadow)" opacity="0.3"/>
+  
+  <!-- Cercle principal -->
+  <circle cx="150" cy="150" r="135" fill="url(#mainGradient)" filter="url(#glow)"/>
+  
+  <!-- Forme géométrique moderne pour le N -->
+  <g transform="translate(80, 80)">
+    <!-- Partie gauche du N -->
+    <rect x="0" y="20" width="12" height="100" fill="white" rx="6"/>
+    
+    <!-- Diagonale du N -->
+    <path d="M 12 20 L 88 120 L 100 108 L 24 8 Z" fill="white" opacity="0.9"/>
+    
+    <!-- Partie droite du N -->
+    <rect x="88" y="20" width="12" height="100" fill="white" rx="6"/>
+  </g>
+  
+  <!-- Forme géométrique moderne pour le C -->
+  <g transform="translate(160, 80)">
+    <!-- Arc principal du C -->
+    <path d="M 60 20 C 25 20, 0 45, 0 70 C 0 95, 25 120, 60 120 L 60 108 C 32 108, 12 88, 12 70 C 12 52, 32 32, 60 32 Z" fill="white"/>
+    
+    <!-- Détail moderne -->
+    <rect x="45" y="15" width="20" height="8" fill="white" rx="4"/>
+    <rect x="45" y="117" width="20" height="8" fill="white" rx="4"/>
+  </g>
+  
+  <!-- Élément décoratif moderne -->
+  <g transform="translate(150, 150)">
+    <!-- Points décoratifs -->
+    <circle cx="-60" cy="-60" r="3" fill="white" opacity="0.6"/>
+    <circle cx="60" cy="-60" r="3" fill="white" opacity="0.6"/>
+    <circle cx="-60" cy="60" r="3" fill="white" opacity="0.6"/>
+    <circle cx="60" cy="60" r="3" fill="white" opacity="0.6"/>
+  </g>
+  
+  <!-- Texte NEXA en bas -->
+  <text x="150" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="url(#mainGradient)">NEXA</text>
+  
+  <!-- Sous-titre -->
+  <text x="150" y="270" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6B7280">FRAMEWORK</text>
+</svg>

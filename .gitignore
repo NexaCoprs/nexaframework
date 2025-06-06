@@ -1,0 +1,52 @@
+# Dépendances
+/vendor/
+/node_modules/
+
+# Environnement
+.env
+.env.local
+.env.production
+
+# Cache et logs
+/storage/cache/*
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/bootstrap/cache/*
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Fichiers de test
+test_report_*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Composer
+composer.phar
+
+# Build
+/public/build/
+/public/hot
+/public/storage
+
+# Exceptions (garder ces fichiers)
+!/storage/cache/.gitkeep
+!/storage/logs/.gitkeep
+!/storage/framework/cache/.gitkeep
+!/storage/framework/sessions/.gitkeep
+!/storage/framework/views/.gitkeep
+!/bootstrap/cache/.gitkeep

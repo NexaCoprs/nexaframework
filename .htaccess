@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirect all requests to public folder
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/$1 [L]
+    
+    # Prevent direct access to sensitive files
+    RewriteCond %{REQUEST_URI} ^/(config|src|storage|vendor|app|database|tests)/
+    RewriteRule ^.*$ - [F,L]
+</IfModule>
