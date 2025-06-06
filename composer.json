@@ -1,10 +1,18 @@
 {
     "name": "nexa/framework",
-    "description": "A simple yet complete PHP framework with Tailwind CSS support",
-    "type": "project",
+    "description": "Framework PHP moderne, léger et puissant pour le développement d'applications web et d'APIs avec support JWT, WebSockets, GraphQL et microservices",
+    "type": "library",
     "license": "MIT",
+    "keywords": ["php", "framework", "mvc", "orm", "jwt", "websockets", "graphql", "microservices", "queue", "cli", "modern"],
+    "homepage": "https://github.com/NexaCoprs/nexaframework",
+    "authors": [
+        {
+            "name": "NexaCoprs",
+            "homepage": "https://github.com/NexaCoprs"
+        }
+    ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.1",
         "firebase/php-jwt": "^6.11",
         "cboden/ratchet": "^0.4.4",
         "symfony/console": "^6.2",
@@ -36,5 +44,9 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/NexaCoprs/nexaframework/issues",
+        "source": "https://github.com/NexaCoprs/nexaframework"
+    }
 }
