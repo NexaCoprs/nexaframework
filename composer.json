@@ -1,6 +1,5 @@
 {
     "name": "nexa/framework",
-<<<<<<< HEAD
     "description": "Le framework PHP qui rend le développement joyeux !",
     "type": "project",
     "license": "MIT",
@@ -13,61 +12,11 @@
             "Workspace\\": "workspace/"
         }
     },
-=======
-    "description": "Framework PHP moderne, léger et puissant pour le développement d'applications web et d'APIs avec support JWT, WebSockets, GraphQL et microservices",
-    "type": "library",
-    "license": "MIT",
-    "keywords": ["php", "framework", "mvc", "orm", "jwt", "websockets", "graphql", "microservices", "queue", "cli", "modern"],
-    "homepage": "https://github.com/NexaCoprs/nexaframework",
-    "authors": [
-        {
-            "name": "NexaCoprs",
-            "homepage": "https://github.com/NexaCoprs"
-        }
-    ],
-    "require": {
-        "php": "^8.1",
-        "firebase/php-jwt": "^6.11",
-        "cboden/ratchet": "^0.4.4",
-        "symfony/console": "^6.2",
-        "symfony/var-dumper": "^6.2",
-        "vlucas/phpdotenv": "^5.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "Nexa\\": "src/Nexa/",
-            "App\\": "app/"
-        },
-        "files": [
-            "src/Nexa/Core/helpers.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "scripts": {
-        "post-autoload-dump": [
-            "Nexa\\Core\\ComposerScripts::postAutoloadDump"
-        ]
-    },
->>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true
     },
-<<<<<<< HEAD
     "minimum-stability": "stable",
     "prefer-stable": true
 }
-=======
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "support": {
-        "issues": "https://github.com/NexaCoprs/nexaframework/issues",
-        "source": "https://github.com/NexaCoprs/nexaframework"
-    }
-}
->>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
