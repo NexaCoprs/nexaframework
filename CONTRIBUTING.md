@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Guide de Contribution - Nexa Framework
 
 [![Contributors](https://img.shields.io/github/contributors/nexa-framework/nexa.svg)](https://github.com/nexa-framework/nexa/graphs/contributors)
@@ -21,6 +22,24 @@ Merci de votre intérêt pour contribuer au Framework Nexa ! Ce guide vous expli
 10. [👥 Communauté](#-communauté)
 11. [🛠️ Extensions VSCode](#️-extensions-vscode)
 12. [🏆 Reconnaissance](#-reconnaissance)
+=======
+# Guide de Contribution - Framework Nexa
+
+Merci de votre intérêt pour contribuer au Framework Nexa ! Ce guide vous explique comment participer au développement et améliorer le framework ensemble.
+
+## Table des Matières
+
+1. [Code de Conduite](#code-de-conduite)
+2. [Comment Contribuer](#comment-contribuer)
+3. [Configuration de l'Environnement](#configuration-de-lenvironnement)
+4. [Standards de Code](#standards-de-code)
+5. [Processus de Pull Request](#processus-de-pull-request)
+6. [Rapporter des Bugs](#rapporter-des-bugs)
+7. [Proposer des Fonctionnalités](#proposer-des-fonctionnalités)
+8. [Documentation](#documentation)
+9. [Tests](#tests)
+10. [Communauté](#communauté)
+>>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
 
 ---
 
@@ -620,6 +639,7 @@ php vendor/bin/phpunit tests/Integration/
 
 ## Communauté
 
+<<<<<<< HEAD
 ### 💬 Discord
 - **Serveur principal** : [discord.gg/nexa](https://discord.gg/nexa)
 - **Canaux disponibles** :
@@ -791,6 +811,30 @@ Merci à nos sponsors qui soutiennent le développement :
 - **Community Support** : Discord, Forum, GitHub Issues
 - **Priority Support** : Pour les sponsors et contributeurs actifs
 - **Enterprise Support** : [Contactez-nous](mailto:enterprise@nexa-framework.com)
+=======
+### Canaux de Communication
+
+- **GitHub Discussions** : Questions générales et discussions
+- **GitHub Issues** : Bugs et demandes de fonctionnalités
+- **Discord** : Chat en temps réel (lien d'invitation)
+- **Twitter** : Annonces et nouvelles (@NexaFramework)
+- **Blog** : Articles techniques et tutoriels
+
+### Événements
+
+- **Réunions Mensuelles** : Discussions sur la roadmap
+- **Hackathons** : Sessions de développement collaboratif
+- **Conférences** : Présentations du framework
+
+### Reconnaissance
+
+Nous reconnaissons les contributions de plusieurs façons :
+
+- **Contributors** : Liste dans le README
+- **Changelog** : Mention dans les notes de version
+- **Blog Posts** : Articles sur les contributions importantes
+- **Swag** : Goodies pour les contributeurs actifs
+>>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
 
 ---
 
@@ -845,6 +889,10 @@ Les mainteneurs sont choisis parmi les contributeurs actifs qui ont démontré l
 
 Merci à tous les contributeurs qui rendent ce projet possible ! Votre temps, vos idées et votre passion font de Nexa un framework meilleur chaque jour.
 
+<<<<<<< HEAD
 **Ensemble, construisons l'avenir du développement PHP !** 🚀
 
 *"La meilleure façon de prédire l'avenir est de le créer."* - Équipe Nexa Framework
+=======
+**Ensemble, construisons l'avenir du développement web en PHP ! 🚀**
+>>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77

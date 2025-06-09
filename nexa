@@ -22,7 +22,11 @@ if (file_exists(BASE_PATH . '/.env')) {
 }
 
 // Load helpers
+<<<<<<< HEAD
 require_once BASE_PATH . '/kernel/Nexa/Core/helpers.php';
+=======
+require_once BASE_PATH . '/src/Nexa/Core/helpers.php';
+>>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
 
 use Nexa\Console\NexaCLI;
 

@@ -6,6 +6,7 @@
 
 // Définir les chemins de base
 define('BASE_PATH', __DIR__);
+<<<<<<< HEAD
 define('WORKSPACE_PATH', BASE_PATH . '/workspace');
 define('CONFIG_PATH', WORKSPACE_PATH . '/config');
 define('STORAGE_PATH', BASE_PATH . '/storage');
@@ -14,10 +15,17 @@ define('HANDLERS_PATH', WORKSPACE_PATH . '/handlers');
 define('DATABASE_PATH', WORKSPACE_PATH . '/database');
 define('INTERFACE_PATH', WORKSPACE_PATH . '/interface');
 define('FLOWS_PATH', WORKSPACE_PATH . '/flows');
+=======
+define('APP_PATH', BASE_PATH . '/app');
+define('CONFIG_PATH', BASE_PATH . '/config');
+define('STORAGE_PATH', BASE_PATH . '/storage');
+define('PUBLIC_PATH', BASE_PATH . '/public');
+>>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
 
 // Charger l'autoloader de Composer
 require_once BASE_PATH . '/vendor/autoload.php';
 
+<<<<<<< HEAD
 // Charger les variables d'environnement
 if (file_exists(BASE_PATH . '/.env')) {
     $lines = file(BASE_PATH . '/.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -45,6 +53,10 @@ require_once BASE_PATH . '/kernel/Nexa/Core/helpers.php';
 // Charger manuellement les plugins
 require_once BASE_PATH . '/kernel/Plugins/PluginManager.php';
 require_once BASE_PATH . '/kernel/Plugins/Plugin.php';
+=======
+// Charger les helpers
+require_once BASE_PATH . '/src/Nexa/Core/helpers.php';
+>>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
 
 // Initialiser l'application
 use Nexa\Core\Application;
@@ -72,14 +84,25 @@ try {
     $dispatchUri = $uri;
     
     // Charger les routes web
+<<<<<<< HEAD
     $router = require FLOWS_PATH . '/web.php';
+=======
+    $router = require BASE_PATH . '/routes/web.php';
+>>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
     
     if (!$router instanceof Router) {
         throw new Exception('Web routes file must return a Router instance');
     }
     
+<<<<<<< HEAD
     // Charger les routes API et les fusionner
     $apiRouter = require FLOWS_PATH . '/api.php';
+=======
+
+    
+    // Charger les routes API et les fusionner
+    $apiRouter = require BASE_PATH . '/routes/api.php';
+>>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
     if ($apiRouter instanceof Router) {
         $router->mergeRouters($apiRouter);
     }
