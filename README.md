@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🚀 Nexa Framework
 
 **Un framework PHP moderne et efficace**
@@ -391,19 +390,6 @@ php nexa optimize
 # Lancer les tests
 php nexa test
 ```
-=======
-# Nexa Framework
-
-Nexa est un framework PHP moderne, léger et puissant pour le développement d'applications web et d'APIs.
-
-![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)
-![PHP Version](https://img.shields.io/badge/php-%3E%3D8.1-8892BF.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-
-## 🚀 Aperçu
-
-Nexa Framework est conçu pour offrir une expérience de développement fluide tout en maintenant des performances exceptionnelles. Il combine la simplicité d'utilisation avec des fonctionnalités avancées pour répondre aux besoins des applications modernes.
->>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
 
 ### ✨ Fonctionnalités Principales
 
@@ -477,7 +463,6 @@ php -S localhost:8000 -t public
 - 📚 [Documentation API](docs/API_DOCUMENTATION.md) - Référence API
 - ⚡ [Démarrage Rapide](docs/QUICK_START.md) - Guide de démarrage
 
-<<<<<<< HEAD
 ### Architecture Moderne
 
 #### Structure du Projet
@@ -583,23 +568,6 @@ export default {
     }
 }
 </script>
-=======
-### Exemple de Routage
-
-```php
-// routes/web.php
-use Nexa\Routing\Router;
-
-Router::get('/', function() {
-    return view('welcome');
-});
-
-Router::get('/users/{id}', 'UserController@show');
-
-Router::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
-    Router::get('/dashboard', 'AdminController@dashboard');
-});
->>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
 ```
 
 ### Exemple d'Authentification JWT
@@ -807,7 +775,6 @@ Nexa Framework est conçu pour être rapide et efficace :
 - **Empreinte mémoire** : ~2MB sans ORM, ~10MB avec ORM complet
 - **Requêtes par seconde** : ~1000 req/s sur un serveur modeste
 
-<<<<<<< HEAD
 ## 🚀 Avantages de Nexa Framework
 
 ### 🎯 Productivité Améliorée
@@ -897,6 +864,7 @@ Nexa Framework propose une suite complète d'extensions VSCode pour une expérie
   - Configuration Docker et CI/CD
   - Gestion des templates de projet
 - **Installation** : `ext install nexa.project-generator`
+
 
 ### 🔧 Extensions Spécialisées
 
@@ -1138,32 +1106,3 @@ SOFTWARE.
 ⭐ **N'oubliez pas de donner une étoile si Nexa vous plaît !** ⭐
 
 </div>
-=======
-## 📚 Documentation
-
-### Guides Essentiels
-- [🚀 Guide de Démarrage Rapide](docs/QUICK_START.md) - Commencez en 5 minutes
-- [📖 Documentation API Complète](docs/API_DOCUMENTATION.md) - Référence technique
-- [✨ Meilleures Pratiques](docs/BEST_PRACTICES.md) - Patterns et anti-patterns
-- [🎓 Tutoriels Détaillés](docs/TUTORIALS.md) - Apprenez par l'exemple
-
-### Développement
-- [🤝 Guide de Contribution](CONTRIBUTING.md) - Comment contribuer
-- [📝 Changelog](CHANGELOG.md) - Historique des versions
-- [🗺️ Phase 1 - Améliorations](PHASE1_IMPROVEMENTS.md)
-- [🗺️ Phase 2 - Roadmap](PHASE2_ROADMAP.md)
-- [🗺️ Phase 3 - Roadmap](PHASE3_ROADMAP.md)
-
-### Ressources
-- [🧪 Tests](tests/) - Suite de tests complète
-- [💡 Exemples](examples/) - Projets d'exemple
-- [🔧 Outils](tools/) - Utilitaires de développement
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! Consultez notre [guide de contribution](CONTRIBUTING.md) pour plus d'informations.
-
-## 📄 Licence
-
-Nexa Framework est un logiciel open-source sous licence [MIT](LICENSE).
->>>>>>> a19def95d90bc4dc9e0cca1d7df7f97a4761be77
